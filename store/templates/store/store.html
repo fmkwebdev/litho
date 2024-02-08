@@ -1,0 +1,175 @@
+{% extends 'store/main.html' %}
+{% load static %}
+{% block content %}
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+  body{
+    background-color: #131212;
+	margin: 0;
+	padding: 0;
+  }
+    #bg{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1;
+        
+    }
+  
+</style>
+<body>
+    <div id="alertContainer" class="position-fixed top-0 end-0 p-3" style="z-index: 1050; margin-top: 5%;">
+  <!-- Alert will be dynamically added here -->
+</div>
+    <div id="bg"></div>
+<section>
+  <div class="container">
+    <div class="row">
+       <div class="col-lg-12" style="z-index: 2; margin-top: 10%;"><p class="Custom3D"><b>Egyedi <span class="text_3d">3D</span> képek.</b></p></div>
+       <div class="col-lg-12" style="z-index: 2;"><p class="Leiras">A 3D fénykép igazán ritka és egyedi ajándék.<br>
+Őrizd meg a legszebb pillanatokat egy különleges,<br> 3D nyomtatott fénykép formájában.</p></div>
+    </div>
+ </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col d-flex align-items-center justify-content-center">
+      <img src="{% static 'images/cube.png' %}" alt="Centered Image" class="logo_kocka"/>
+    </div>
+  </div>
+</div>
+
+</section>
+
+<div class="d-flex justify-content-center" style="margin-top: 5%;">
+    <p class="How"><b>Mi az a litofán kép?</p>
+</div>
+
+<section>
+<div class="d-flex w-100" style="margin-top: 5%; margin-bottom: 25%; height:  background: #0a0808; margin-left: .05%; border-radius: 2em; flex-direction: column; justify-content: space-around; align-items: stretch; z-index: 2; opacity: 1;">
+	<div class="col" style="background-color: #0a0808; border-radius: 2em; z-index: 2;">
+	
+	<div class="col" style="margin-top: 2em;" id="how_does_it_work">
+        <div class="col" style="background-color: #0a0808; margin-top: 2em; border-radius: 2em 2em 0 0;z-index: 2;">
+        <p class="cim1">3D nyomtatott fénykép (litofán nyomtatás)</p>
+        <p class="bekezdes">A 3D nyomtatott fénykép rendkívül ritka és egyedi ajándék lehet. Ez a technika azáltal működik, hogy különböző vastagságú rétegeken át a fény eltérő módon halad keresztül. Először csak egy fehér dombornyomatként látszik, de ha fényt helyezünk mögé, (például lámpa elé tesszük), akkor a kép hirtelen láthatóvá válik. Ahol a nyomat vékonyabb, ott világosabb a kép, ahol vastagabb, ott sötétebb. Ezt a technikát eredetileg vékony porcelánlemezeknél használták már az 1800-as évek elején. Ma viszont 3D nyomtatással is alkalmazzák, hogy így különleges ajándék formájában örökítsék meg az emlékezetes pillanatokat.
+        </p>
+	</div>
+	<div class="col" style="background-color: #0a0808; border-radius: 2em;z-index: 2; margin-top: 2em;">
+    <p class="cim1"> Design </p>
+    <p class="bekezdes">Nálunk számos különböző kivitelben rendelhetsz 3D-s fotókat, litofánokat. Ezek a különleges alkotások kis keretekben készülnek, hogy még jobban kiemeljék a hatást. Emellett elérhetőek négyzet alakú litofán kulcstartók is, melyeket szintén 3D nyomtatással készítünk fehér PLA bioműanyagból. Ha pedig egyedi formát vagy méretet szeretnél, bátran írj nekünk. Személyre szabott megoldásokkal igyekszünk vásárlóink igényeit kielégíteni.
+    </p>
+    </div>
+    <div class="col" style="background-color: #0a0808; border-radius: 2em;z-index: 2; margin-top: 2em;">
+    <p class="cim1">A rendelés menete</p>
+    <p class="bekezdes">Az egyedi ajándék elkészítéséhez szükségünk van a kiválasztott fényképekre, melyek lehetnek álló vagy fekvő elrendezésűek is. Ha esetleg kétségeid lennének a fényképek minőségével vagy megfelelőségével kapcsolatban, ne aggódj, mert szívesen segítünk, és jelentkezünk, ha szükség van bármilyen módosításra vagy pontosításra.
+        </p>
+    </div>
+    <div class="col" style="background-color: #0a0808; border-radius: 0 0 0em 0em;z-index: 2;">
+        <p class="cim1">Milyen fényképet küldjek?</p>
+    <p class="bekezdes">
+                           Bármilyen emlék, ami számodra különleges és értékes, megérdemli, hogy egyedi ajándékká váljon. Lehet ez egy meghitt családi pillanat, egy büszke ballagás, diplomaosztó, romantikus esküvő vagy a kedvenc háziállatod kedves fotója.
+    </p>
+    </div><br>
+    <div class="col" style="background-color: #0a0808; border-radius: 0 0 2em 2em;z-index: 2;">
+   
+    
+    </div>
+</div>
+</div>
+</section>
+    
+<section>
+	<div class="d-flex w-100  " style="justify-content: space-between; align-items: stretch; height: 45vh; margin-top: 5%; padding: 10px; gap: 1.4em;">
+		<div class="col" style="height: 100%;  border-radius: 2em;  z-index: 2; overflow: hidden; flex-grow: 1;">
+			<video autoplay muted loop class="video">
+                  <source src="{% static 'images/asd.mp4' %}" type="video/mp4">
+                </video>
+		</div>
+		<div class="col" style="background: url('{% static 'images/prod.jpg' %}'); height: 100%; background-size: contain;  border-radius: 2em; flex-grow: 1;z-index: 2; ">
+			
+		</div>
+        <div class="col" style="background: url('{% static 'images/kutya.jpg'%}'); height: 100%; background-size: contain;  border-radius: 2em; flex-grow: 1;z-index: 2; ">
+        </div>
+	</div>
+	<div class="d-flex w-100 " style="justify-content: space-between; align-items: stretch; height: 45vh; padding: 10px; gap: 1.4em;z-index: 2;">
+                <div class="col" style="flex-grow: 1; background: url('{% static 'images/big.jpg'%}'); height: 100%; background-size: contain;  border-radius: 2em; flex-grow: 1;z-index: 2; "></div>
+		<div class="col" style="background: url('{% static 'images/2.jpg'%}'); background-size: contain; object-fit: fill; height: 100%;  border-radius: 2em; flex-grow: 1;z-index: 2;">
+			
+		</div>
+		<div class="col" style=" height: 100%;  border-radius: 2em;z-index: 2; overflow: hidden;">
+			<video autoplay muted loop class="video">
+                  <source src="{% static 'images/asd3.mp4'%}" type="video/mp4">
+                  
+                  
+                </video>
+		</div>
+
+	</div>
+</section>
+<section style="background-color: #0a0808; z-index: 1; margin-top: 20%; border-radius: 5em; width: 100%; padding: 2em;" class="col-lg-12 z-3" id="products">
+	<div class="card-deck">
+{% for product in products %}
+  <div class="card" style="border-radius: 4em 4em 4em 4em;; border: 0;">
+    <img src="{{ product.imageURL }}" class="card-img-top" alt="..." style="max-height: 60%; border-radius: 10% 10% 0% 0%;">
+    <div class="card-body">
+      <h5 class="card-title text-center" style="font-size: 1.8em;"><strong>{{product.name}}</strong></h5>
+      <p class="card-text text-center" style="font-size: 1.5em; margin-top: 1em; margin-bottom: 1em;">{{product.leiras}}</p>
+          <button data-product="{{product.id}}" data-action="add" class="col-lg-6 btn btn-outline-secondary add-btn update-cart" style="border-radius: 2em; z-index: 3;"><h4 style="font-size: 1.25em; font-weight:700;"><stong>Kosárba Tétel</stong></h4></button>
+				<button class="col-lg-6 btn btn-outline-secondary" style="border-radius: 2em; float: right; z-index: 3;" ><h4 style="font-size: 1.25em; font-weight: 500; pointer-events: none;"><strong>{{product.price}} € </strong></h4></button>
+    </div>
+  </div>
+ {% endfor %}
+</div>
+</section>
+
+    </div>
+    <style>
+    .footer {
+        background-color: #000;
+        color: white;
+        margin-top: 10%;/* Set text color to white for better visibility */
+    }
+        .xb{
+            color: white;
+            font-size: 1.4em;
+            font-weight: 400;
+        }
+       .xz{
+            color: white;
+            font-size: 1.2em;
+            font-weight: 500;
+            
+        }
+        .xy{
+            font-size: 1.2em;
+            font-weight: 350;
+            
+        }
+        a:hover{
+            color: #826fd6;
+        }
+</style>
+
+<footer class="footer text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12" style="z-index: 999999;">
+                <a href="https://www.instagram.com/lithoart3d" class="xb"><i class="fab fa-instagram"></i>  LithoArt3D</a><br>
+                <a href="mailto:support@lithoart3d.com" class="xz"><i class="fas fa-envelope"></i>  support@lithoart3d.com</a><br>
+                <p class="xy">&copy; 2024 LithoArt3D | All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+  <script src="{% static 'js/particles.min.js' %}"></script>
+<script src="{% static 'js/custom.js' %}"></script>
+</body>
+{% endblock content %}
