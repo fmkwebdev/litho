@@ -29,8 +29,13 @@
 					
 					<div id="shipping-info">
 						<hr>
-						<p style="font-size: 1.2em; font-weight: 600; margin: 1em; color: #fff;">Szállítási infók</p>
+						<p style="font-size: 1.2em; font-weight: 600; margin: .5em; color: #fff;">Szállítási infók</p>
 						<hr>
+                        <div class="form-field">
+                            <select class="form-control" id="country" name="country">
+                                <option value="Serbia">🇷🇸 Szerbia</option>
+                            </select>
+                        </div>
 						<div class="form-field">
 							<input required class="form-control" type="text" name="address" placeholder="Lakcím..">
 						</div>
@@ -38,13 +43,17 @@
 							<input required class="form-control" type="text" name="city" placeholder="Város..">
 						</div>
 						<div class="form-field">
-							<input required class="form-control" type="text" name="state" placeholder="Körzet..">
-						</div>
-						<div class="form-field">
 							<input required class="form-control" type="text" name="zipcode" placeholder="Irányítószám..">
 						</div>
-						
+                        <br><br>
+                    <div class="form-field">
+                      
+                        <p style="font-size: 1.2em; font-weight: 600; margin: .5em; color: #fff;">Kiszállító</p>
+                        <option value="BEX"><img src="https://i.imgur.com/tSrnq6T.jpeg"/ style="width: 150px; height: 90px;"></option>
+                            
+				    </div>
                     </div>
+                    
                     
 <form  method="post" enctype="multipart/form-data">
 
@@ -64,7 +73,7 @@
 			</div>
 			
 		</div>
-
+            
 		<div class="col-lg-12">
 			<div class="boxere-element" style="border-radius: 20px; background-color: #0f0f0f; background-blend-mode: darken;">
 				<a  class="btn btn-outline-light" href="{% url 'cart' %}" style="border-radius: 20px; color: #fff;">&#x2190; Vissza</a>

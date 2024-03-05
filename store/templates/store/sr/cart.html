@@ -18,31 +18,30 @@
 
 				<br>
 				<br>
-				
-				<table class="table">
+				<table class="col-lg-12">
 					<tr>
 						<th><h5 class="cart_termekek" style="color: white;">Broj proizvoda: <strong>{{order.get_cart_items}}</strong></h5></th>
 						<th><h5 class="cart_vegosszeg" style="color: white;">Ukupan iznos:<strong> {{order.get_cart_total|floatformat:2}} €</strong></h5></th>
 						<th>
-							<a  style="float:right; margin:5px; border-radius: 15px;" class="btn btn-success phx" href="{% url 'checkoutsr' %}" >Kupovina</a>
+							<a style="float:right; margin:5px; border-radius: 15px;" class="btn btn-success phx" href="{% url 'checkoutsr' %}" >Kupovina</a>
 						</th>
 					</tr>
-				
 				</table>
+				
 				
 			</div>
 
 			<br>
 			<div class="boxolo-element" style="background-color: #0f0f0f; background-blend-mode: darken; display: flex; flex-direction: column; justify-content: space-around; justify-content: space-evenly; gap: 1.4em">
 				<div class="cart-row">
-					<div style="flex-grow: 2; margin-left: 10%;"><strong style="color: white;">Proizvod</strong></div>
-					<div style="flex-grow: 2;"><strong style="color: white;">Broj komada</strong></div>
-					<div style="flex-grow: 2;"><strong style="color: white;">Ukupan iznos</strong></div>
+					<div style="flex-grow: 2; margin-left: 10%;"><strong style="color: white;" class="cart_termekek">Proizvod</strong></div>
+					<div style="flex-grow: 2;"><strong style="color: white;" class="cart_termekek">Broj komada</strong></div>
+					<div style="flex-grow: 2;"><strong style="color: white;" class="cart_termekek">Ukupan iznos</strong></div>
 				</div>
 			<div class="boxolo-element" style="background-color: #0f0f0f; background-blend-mode: darken; display: flex; flex-direction: column; justify-content: center; align-items: stretch; gap: 1.4em">
 				{% for item in items %}
 				<div class="cart-row">
-					<div style="flex-grow: 2; margin-left: 9%;"><p style="color: white;">{{item.product.name2}}</p>
+					<div style="flex-grow: 2; margin-left: 9%;"><p style="color: white;" class="cart_termekek">{{item.product.name2}}</p>
                     </div>
 					<div style="flex-grow: 2;">
 						<p class="quantity"  style="color: white; font-size: 1.5em;">{{item.quantity}}</p>

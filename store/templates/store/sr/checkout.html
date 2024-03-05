@@ -31,6 +31,11 @@
 						<hr>
 						<p style="font-size: 1.2em; font-weight: 600; margin: 1em; color: #fff;">Informacije o dostavi</p>
 						<hr>
+                        <div class="form-field">
+                            <select class="form-control" id="country" name="country" >
+                                <option value="Serbia">🇷🇸 Srbija</option>
+                            </select>
+                        </div>
 						<div class="form-field">
 							<input required class="form-control" type="text" name="address" placeholder="Addressa..">
 						</div>
@@ -38,11 +43,15 @@
 							<input required class="form-control" type="text" name="city" placeholder="Grad..">
 						</div>
 						<div class="form-field">
-							<input required class="form-control" type="text" name="state" placeholder="Opština..">
-						</div>
-						<div class="form-field">
 							<input required class="form-control" type="text" name="zipcode" placeholder="Poštanski broj..">
-						</div>			
+						</div>
+                        <br><br>
+                        <div class="form-field">
+                      
+                        <p style="font-size: 1.2em; font-weight: 600; margin: .5em; color: #fff;">Dostavljač</p>
+                        <option value="BEX"><img src="https://i.imgur.com/tSrnq6T.jpeg"/ style="width: 150px; height: 90px;"></option>
+                            
+				    </div>
                     </div>
                     
 <form  method="post" enctype="multipart/form-data">
@@ -53,14 +62,16 @@
 					<input id="form-button" class="btn btn-success btn-block" type="submit" value="Dalje ka kupovini" style="height: 100%; border-radius: 12px;">
 					<hr>
 				</form>
+             </div>
+                
 			<br>
 			<div class="hooker1-element hidden" id="payment-info" style="display: flex; justify-content: center; justify-items: center;">
 				<!--<button id="make-payment">Make payment</button>-->
-				<div id="paypal-button-container"  style="width: 400px;"></div>
+				<div id="paypal-button-container"  style="width: 400px;"><center></center></div>
 				
 			</div>
 			
-		
+            </div>
 
 		<div class="col-lg-12">
 			<div class="boxere-element" style="border-radius: 20px; background-color: #0f0f0f; background-blend-mode: darken;">
