@@ -49,7 +49,6 @@ if (action == 'add') {
         // Show success message
         var successHTML = '<div class="alert alert-success alert-dismissible fade show" role="alert">' +
                         '  Termék sikeresen hozzáadva a kosárhoz.' +
-                        '  <button type="button" class="close" data-dismiss="alert" aria-label="Close">' +
                         '    <span aria-hidden="true">&times;</span>' +
                         '  </button>' +
                         '</div>';
@@ -61,7 +60,6 @@ if (action == 'add') {
             console.log('Item added to cart');
             var successHTML = '<div class="alert alert-success alert-dismissible fade show" role="alert">' +
                         '  Termék sikeresen hozzáadva a kosárhoz.' +
-                        '  <button type="button" class="close" data-dismiss="alert" aria-label="Close">' +
                         '    <span aria-hidden="true">&times;</span>' +
                         '  </button>' +
                         '</div>';
@@ -70,7 +68,6 @@ if (action == 'add') {
             // Item is already in the cart, log a message or take appropriate action
             var alertHTML = '<div class="alert alert-danger alert-dismissible fade show" role="alert">' +
                             ' Már van egy termék a kosárban. A kosár ikonra kattintva tudja megnézni illetve szerkeszteni.' +
-                            '  <button type="button" class="close" data-dismiss="alert" aria-label="Close">' +
                             '    <span aria-hidden="true">&times;</span>' +
                             '  </button>' +
                             '</div>';

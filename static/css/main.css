@@ -43,11 +43,10 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .alert {
-    max-width: 80%; /* Adjust the maximum width as needed */
+    max-width: 100%; /* Adjust the maximum width as needed */
     padding: 10px;
-    background-color: #f8d7da; /* Background color for the alert */
-    color: #721c24; /* Text color for the alert */
-    border: 1px solid #f5c6cb; /* Border color for the alert */
+    color: #000; /* Text color for the alert */
+    font-weight: 400;
     border-radius: 4px;
     text-align: center;
 }
